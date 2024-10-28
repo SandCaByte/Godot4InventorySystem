@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://uejfxykdkw4q"]
+
+[ext_resource type="PackedScene" uid="uid://3mlcjcmqa6ht" path="res://inventory.tscn" id="1_km612"]
+[ext_resource type="Script" path="res://main.gd" id="1_lw6io"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_lw6io")
+
+[node name="SettingsButton" type="Button" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 536.0
+offset_top = 48.0
+offset_right = 616.0
+offset_bottom = 80.0
+grow_horizontal = 2
+text = "Settings"
+
+[node name="Inventory" parent="." instance=ExtResource("1_km612")]
+
+[node name="Inventory2" parent="." instance=ExtResource("1_km612")]
+offset_left = 624.0
+offset_right = 624.0
+
+[connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]

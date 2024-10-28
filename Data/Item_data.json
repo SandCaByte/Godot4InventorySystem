@@ -1,0 +1,22 @@
+{
+  "1": {
+    "Name": "Item1",
+    "MaxStackSize": 1,
+    "Shape": "0,0/0,1/-1,0"
+  },
+  "2": {
+    "Name": "Item2",
+    "MaxStackSize": 16,
+    "Shape": "0,0/0,1"
+  },
+  "3": {
+    "Name": "Item3",
+    "MaxStackSize": 32,
+    "Shape": "0,0/1,0"
+  },
+  "4": {
+    "Name": "Item4",
+    "MaxStackSize": 64,
+    "Shape": "0,0"
+  }
+}
